@@ -1,0 +1,25 @@
+{
+	"name": "sembilan-ui",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"build": "turbo build",
+		"dev": "turbo dev",
+		"lint": "biome lint --write --unsafe .",
+		"format": "biome format --write .",
+		"format-and-lint:fix": "biome check --write --unsafe .",
+		"check-types": "turbo check-types"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"@typescript/native-preview": "7.0.0-dev.20260327.2",
+		"@workspace/typescript-config": "workspace:*",
+		"lefthook": "2.1.4",
+		"portless": "0.7.2",
+		"turbo": "^2.8.20"
+	},
+	"packageManager": "pnpm@9.15.9",
+	"engines": {
+		"node": ">=20"
+	}
+}
