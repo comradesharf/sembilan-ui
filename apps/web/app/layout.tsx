@@ -2,6 +2,8 @@ import { Geist_Mono, Inter } from "next/font/google";
 
 import "@workspace/ui/globals.css";
 import { cn } from "@workspace/ui/lib/utils";
+import { MotionProvider } from "@workspace/ui/sembilan/components/motion-provider";
+import { NuqsAdapter } from "nuqs/adapters/next/app";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -27,9 +29,13 @@ export default function RootLayout({
 				inter.variable,
 			)}
 		>
-			<body>
-				<ThemeProvider>{children}</ThemeProvider>
-			</body>
+			<MotionProvider>
+				<NuqsAdapter>
+					<body>
+						<ThemeProvider>{children}</ThemeProvider>
+					</body>
+				</NuqsAdapter>
+			</MotionProvider>
 		</html>
 	);
 }

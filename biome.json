@@ -19,7 +19,15 @@
 			"next": "all"
 		},
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"nursery": {
+				"useSortedClasses": {
+					"options": {
+						"functions": ["cn", "cva"]
+					},
+					"level": "on"
+				}
+			}
 		}
 	},
 	"javascript": {
