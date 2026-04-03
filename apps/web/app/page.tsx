@@ -7,6 +7,12 @@ export default function Page() {
 			<NextLink href="/components/inputs" variant="link">
 				Go to inputs
 			</NextLink>
+			<NextLink href="/components/popovers" variant="link">
+				Go to popovers
+			</NextLink>
+			<NextLink href="/components/cards" variant="link">
+				Go to cards
+			</NextLink>
 		</motion.div>
 	);
 }
